@@ -8,6 +8,9 @@ class houses(models.Model):
     def __str__(self):
         return self.housename
 
+    class Meta:
+        db_table = "houses"
+
 
 class boss(models.Model):
     name = models.CharField(max_length=100)
@@ -17,3 +20,6 @@ class boss(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        db_table = "boss"
